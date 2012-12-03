@@ -185,8 +185,9 @@ int main() {
     auto e = f.end(10);
 
 
-    std::copy(b, e, std::ostream_iterator<int>(std::cout, "+"));
-    std::cout << '=' << std::accumulate(b, e, 0) << std::endl;
+    std::copy(b, e, std::ostream_iterator<int>(std::cout, " "));
+    std::cout << std::endl;
+    std::cout << std::accumulate(b, e, 0) << std::endl;
 
     return 0;
 }
